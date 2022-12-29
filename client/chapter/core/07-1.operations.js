@@ -2,10 +2,10 @@
 /* Operators                                                              */
 /* ---------------------------------------------------------------------- */
 
-let firstValue = Number(prompt("덧셈할 첫 번째 숫자를 입력해주세요.", 1));
-let secondValue = Number(prompt("덧셈할 두 번째 숫자를 입력해주세요.", 2));
+// let firstValue = Number(prompt("덧셈할 첫 번째 숫자를 입력해주세요.", 1));
+// let secondValue = Number(prompt("덧셈할 두 번째 숫자를 입력해주세요.", 2));
 
-alert(firstValue + secondValue);
+// alert(firstValue + secondValue);
 
 // 연산자(演算子): 연산을 표시하기 위한 기호
 // 피연산자(被演算子): 처리 대상
@@ -75,3 +75,9 @@ let count = 10;
 let total = (count % 4) * (count /= 2) + count ** 3; // 135
 // total = (2 * 5) + 5 ** 3
 // total = 10 + 125 = 135
+
+// 번외) 계산해보기
+let num1 = 2;
+let result = (num1 += 3) - num1 + (num1 -= 1) * num1 + 5;
+// 5 - 5 + 4 * 4 + 5 = 21
+console.log(result);

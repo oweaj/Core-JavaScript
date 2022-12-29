@@ -72,4 +72,11 @@ function fishBreadCase(data) {
 }
 console.log(fishBreadCase("팥"));
 
+// 번외) 템플릿리터털 여러개 적용
+function myCar(color) {
+  return `자동차 색상은 ${color}이고 내가 가장 좋아하는 색상도 ${color}입니다.
+혹시 ${color}색상 좋아하시나요?`;
+}
+console.log(myCar("white"));
+
 // this
