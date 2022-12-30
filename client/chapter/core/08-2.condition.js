@@ -32,17 +32,17 @@ let whichTruthy = false || "" || [2, 3].length || { isTruthy: true };
 
 let ID = prompt("아이디를 입력해주세요", "");
 
-if (ID === "Admin") {
+if (ID?.toLowerCase() === "admin") {
   let PW = prompt("패스워드를 입력해주세요", "4자리이상");
-  if (PW === "pass") {
+  if (PW?.toLowerCase() === "pass") {
     console.log("환영합니다");
   } else if (PW.length < 3) {
     console.log("패스워드 4자리이상 해주세요");
   } else {
     console.log("패스워드 다시한번 확인해주세요");
   }
-} else if (ID !== "Admin") {
-  console.log("아이디를 다시한번 확인해주세요");
+} else if (ID === null || ID === " ") {
+  console.log("취소했습니다");
 } else {
-  console.log("환영합니다");
+  console.log("아이디를 다시 확인해주세요");
 }
