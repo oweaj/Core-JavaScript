@@ -83,6 +83,6 @@ const randomUser = {
 // - 성능 비교 진단
 
 // 세가지 찾아보기
-// Object.entries;
-// Object.keys;
-// Object.values;
+// Object.entries;  (키, 값 쌍을 담은 배열 반환)
+// Object.keys;     (객체의 키만 담은 배열 반환)
+// Object.values;   (객체의 값만 담은 배열 반환)
