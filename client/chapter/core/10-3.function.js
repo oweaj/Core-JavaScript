@@ -58,15 +58,13 @@ function pow(baseNum, powNum) {
 }
 console.log(pow(2, 10));
 
-// 화살표 함수로 작성
-let arrowPow = (baseNum, powNum) => {
-  let total = 1;
-  for (let i = 0; i < powNum; i++) {
-    total *= baseNum;
-  }
-  return total;
-};
-console.log(arrowPow(2, 9));
+// reduce 화살표 함수
+let reducePow = (baseNum, powNum) =>
+  Array(powNum)
+    .fill(null)
+    .reduce((acc) => acc * baseNum, 1);
+let result = reducePow(2, 8);
+console.log(result);
 
 // repeat(text: string, repeatCount: number): string;
 
@@ -74,9 +72,17 @@ console.log(arrowPow(2, 9));
 
 function repeat(str, count) {
   let result = "";
-  for (let i = 0; i <= count; i++) {
+  for (let i = 0; i < count; i++) {
     result += str;
   }
   return result;
 }
 console.log(repeat("Nice JavaScript!!", 2));
+
+// reduce 화살표 함수
+let reduceRepeat = (str, count) =>
+  Array(count)
+    .fill(null)
+    .reduce((acc) => acc + str, "");
+let answer = reduceRepeat("hi~", 3);
+console.log(answer);
