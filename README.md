@@ -63,7 +63,7 @@
 
 #### [ Web API - DOM, Events ]
 
-- [x] Traversal [바로가기](https://github.com/oweaj/coreJS/blob/01.core/client/chapter/core/19.tryCatch.js)
+- [x] Traversal (DOM) [바로가기](https://github.com/oweaj/Core-JavaScript/blob/02.dom/client/chapter/dom/01.traversal.js)
 - [x] NodeClass (DOM) [바로가기](https://github.com/oweaj/Core-JavaScript/blob/02.dom/client/chapter/dom/02.nodeClass.js)
 - [x] Properties (DOM) [바로가기](https://github.com/oweaj/Core-JavaScript/blob/02.dom/client/chapter/dom/03.attr.js)
 - [x] Manipulation (DOM) [바로가기](https://github.com/oweaj/Core-JavaScript/blob/02.dom/client/chapter/dom/04.manipulation.js)
