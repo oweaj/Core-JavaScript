@@ -16,7 +16,7 @@ const first = getNode(".first");
 //   }
 
 //   if (typeof className !== "string") {
-//     typeError("className 인자의 타입형식은 문자 타입 이여야 합니다");
+//     typeError("className 인자의 타입형식은 문자 타입 이여야 합니다"):
 //   }
 
 //   node.classList.add(className);
