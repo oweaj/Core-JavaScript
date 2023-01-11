@@ -67,3 +67,6 @@
 - [x] NodeClass (DOM) [바로가기](https://github.com/oweaj/Core-JavaScript/blob/02.dom/client/chapter/dom/02.nodeClass.js)
 - [x] Properties (DOM) [바로가기](https://github.com/oweaj/Core-JavaScript/blob/02.dom/client/chapter/dom/03.attr.js)
 - [x] Manipulation (DOM) [바로가기](https://github.com/oweaj/Core-JavaScript/blob/02.dom/client/chapter/dom/04.manipulation.js)
+- [x] Style (DOM) [바로가기](https://github.com/oweaj/Core-JavaScript/blob/02.dom/client/chapter/dom/05.styling.js)
+- [x] Event (Event) [바로가기](https://github.com/oweaj/Core-JavaScript/blob/02.dom/client/chapter/dom/06.event.js)
+- [x] Bubbling (Event) [바로가기](https://github.com/oweaj/Core-JavaScript/blob/02.dom/client/chapter/dom/07.bubble.js)
