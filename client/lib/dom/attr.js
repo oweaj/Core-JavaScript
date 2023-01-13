@@ -1,3 +1,5 @@
+import { getNode, typeError, syntaxError } from "../index.js";
+
 function getAttr(node, prop) {
   if (typeof node === "string") {
     node = getNode(node);
@@ -22,7 +24,7 @@ function setAttr(node, prop, value) {
   node.setAttribute(prop, value);
 }
 
-function attr(node, prop, value) {
+export function attr(node, prop, value) {
   // if (!value) {
   //   return getAttr(node, prop);
   // } else {

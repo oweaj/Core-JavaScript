@@ -1,4 +1,6 @@
-function addClass(node, className) {
+import { getNode, typeError, syntaxError } from "../index.js";
+
+export function addClass(node, className) {
   if (typeof node === "string") {
     node = getNode(node);
   }
@@ -10,7 +12,7 @@ function addClass(node, className) {
   node.classList.add(className);
 }
 
-function removeClass(node, className) {
+export function removeClass(node, className) {
   if (typeof node === "string") {
     node = getNode(node);
   }
@@ -27,7 +29,7 @@ function removeClass(node, className) {
   node.classList.remove(className);
 }
 
-function toggleClass(node, className) {
+export function toggleClass(node, className) {
   if (typeof node === "string") {
     node = getNode(node);
   }
@@ -70,7 +72,7 @@ function setCss(node, prop, value) {
 }
 
 // getCss 와 setCss 함수를 한번에 통합한 css함수 작성
-function css(node, prop, value) {
+export function css(node, prop, value) {
   return !value ? getCss(node, prop) : setCss(node, prop, value);
 }
 

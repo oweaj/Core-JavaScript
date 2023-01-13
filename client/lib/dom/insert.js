@@ -1,4 +1,6 @@
-function insertBefore(node, text) {
+import { getNode, typeError } from "../index.js";
+
+export function insertBefore(node, text) {
   if (typeof node === "string") {
     node = getNode(node);
   }
@@ -10,7 +12,7 @@ function insertBefore(node, text) {
   node.insertAdjacentHTML("beforebegin", text);
 }
 
-function insertFirst(node, text) {
+export function insertFirst(node, text) {
   if (typeof node === "string") {
     node = getNode(node);
   }
@@ -22,7 +24,7 @@ function insertFirst(node, text) {
   node.insertAdjacentHTML("afterbegin", text);
 }
 
-function insertLast(node, text) {
+export function insertLast(node, text) {
   if (typeof node === "string") {
     node = getNode(node);
   }
@@ -34,7 +36,7 @@ function insertLast(node, text) {
   node.insertAdjacentHTML("beforeend", text);
 }
 
-function insertAfter(node, text) {
+export function insertAfter(node, text) {
   if (typeof node === "string") {
     node = getNode(node);
   }
