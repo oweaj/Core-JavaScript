@@ -75,5 +75,5 @@
 
 #### [ Toy Project ]
 
-- [x] Simple Calculator [바로가기](https://github.com/oweaj/Core-JavaScript/blob/03.calculator/client/main.js)
-- [x] Jujeob Generator (주접 생성기) [바로가기](https://github.com/oweaj/Core-JavaScript/blob/04.jujeob/client/main.js)
+- [x] Simple Calculator [바로가기](https://github.com/oweaj/Core-JavaScript/tree/03.calculator)
+- [x] Jujeob Generator [바로가기](https://github.com/oweaj/Core-JavaScript/tree/04.jujeob)
