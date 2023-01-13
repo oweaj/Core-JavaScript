@@ -4,11 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>calculator</title>
     <link rel="stylesheet" href="/client/style.css" />
-    <script defer src="/client/main.js"></script>
+    <script src="./lib/dom/getNode.js"></script>
+    <script src="./lib/dom/css.js"></script>
+    <script src="./lib/dom/insert.js"></script>
+    <script src="./lib/error/typeError.js"></script>
+    <script defer src="./main.js"></script>
   </head>
   <body>
-    <h1>hello world</h1>
+    <form class="calculator">
+      <div class="first">
+        <label for="firstNumber">First Value</label>
+        <input type="number" name="first" id="firstNumber" required />
+      </div>
+
+      <div class="operator">+</div>
+
+      <div class="second">
+        <label for="secondNumber">Second Value</label>
+        <input type="number" name="second" id="secondNumber" required />
+      </div>
+
+      <input id="done" type="submit" value="done" />
+
+      <div class="result">-</div>
+    </form>
   </body>
 </html>
