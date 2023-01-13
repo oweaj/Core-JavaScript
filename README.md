@@ -70,3 +70,10 @@
 - [x] Style (DOM) [바로가기](https://github.com/oweaj/Core-JavaScript/blob/02.dom/client/chapter/dom/05.styling.js)
 - [x] Event (Event) [바로가기](https://github.com/oweaj/Core-JavaScript/blob/02.dom/client/chapter/dom/06.event.js)
 - [x] Bubbling (Event) [바로가기](https://github.com/oweaj/Core-JavaScript/blob/02.dom/client/chapter/dom/07.bubble.js)
+
+---
+
+#### [ Toy Project ]
+
+- [x] Simple Calculator [바로가기](https://github.com/oweaj/Core-JavaScript/blob/03.calculator/client/main.js)
+- [x] Jujeob Generator (주접 생성기) [바로가기](https://github.com/oweaj/Core-JavaScript/blob/04.jujeob/client/main.js)
