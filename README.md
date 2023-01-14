@@ -1,10 +1,10 @@
-# 멋쟁이 사자처럼 4기
+# 🦁 멋쟁이 사자처럼 4기
 
 ## 자바스크립트에 대해 학습합니다.
 
 학습이 완료된 항목은 체크박스로 표시됩니다
 
-#### [ JavaScript Core ]
+### [ JavaScript Core ]
 
 - [x] Code Structure [바로가기](https://github.com/oweaj/coreJS/blob/01.core/client/chapter/core/01.codeStructure.js)
 - [x] Variables [바로가기](https://github.com/oweaj/coreJS/blob/01.core/client/chapter/core/02.variables.js)
@@ -61,7 +61,7 @@
 
 ---
 
-#### [ Web API - DOM, Events ]
+### [ Web API - DOM, Events ]
 
 - [x] Traversal (DOM) [바로가기](https://github.com/oweaj/Core-JavaScript/blob/02.dom/client/chapter/dom/01.traversal.js)
 - [x] NodeClass (DOM) [바로가기](https://github.com/oweaj/Core-JavaScript/blob/02.dom/client/chapter/dom/02.nodeClass.js)
@@ -73,7 +73,7 @@
 
 ---
 
-#### [ Toy Project ]
+### [ Toy Project ]
 
 - [x] Simple Calculator [바로가기](https://github.com/oweaj/Core-JavaScript/tree/03.calculator)
 - [x] Jujeob Generator [바로가기](https://github.com/oweaj/Core-JavaScript/tree/04.jujeob)
