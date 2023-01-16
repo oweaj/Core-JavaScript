@@ -12,5 +12,3 @@ export function showAlert(node, text = "에러입니다!!", timeout = 1500) {
     removeClass(node, "is-active");
   }, timeout);
 }
-
-// showAlert(".alert", "올바른 정보를 확인해주세요", 2000);
