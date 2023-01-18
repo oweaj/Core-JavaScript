@@ -1,4 +1,8 @@
+import { typeError } from "../error/typeError.js";
+
 /* readyState
+import { typeError } from '../error/typeError';
+import { insertLast } from '../dom/insert';
 0: uninitalized  // 초기화
 1: loading  // 로딩
 2: loaded  // 로딩이 완료됨
@@ -129,3 +133,78 @@ xhrData.delete = (url, onSuccess, onFail) => {
 //     bs: "harness real-time e-markets",
 //   },
 // });
+
+//
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+//
+// promise API
+
+const defaultOptions = {
+  url: "",
+  method: "GET",
+  body: null,
+  headers: {
+    "Content-Type": "application/json",
+    "Access-Control-Allow-Origin": "*",
+  },
+};
+
+export function xhrPromise(options = {}) {
+  const xhr = new XMLHttpRequest();
+
+  const { method, url, body, headers } = Object.assign({}, defaultOptions, options);
+
+  if (!url) typeError("서버와 통신할 url은 반드시 필요합니다.");
+
+  xhr.open(method, url);
+
+  xhr.send(JSON.stringify(body));
+
+  return new Promise((resolve, reject) => {
+    xhr.addEventListener("readystatechange", () => {
+      const { status, readyState, response } = xhr;
+
+      if (status >= 200 && status < 400) {
+        if (readyState === 4) {
+          resolve(JSON.parse(response));
+        }
+      } else {
+        reject("실패 실패 실패");
+      }
+    });
+  });
+}
+
+// xhrPromise({
+//   url: "https://jsonplaceholder.typicode.com/users",
+// })
+//   .then((result) => {
+//     console.log(result);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
+
+xhrPromise.get = (url) => {
+  return xhrPromise({
+    url,
+  });
+};
+
+xhrPromise.delete = (url, body) => {
+  return xhrPromise({
+    url,
+    body,
+    method: "DELETE",
+  });
+};
+
+// xhrPromise
+//   .get("https://jsonplaceholder.typicode.com/users/2")
+//   .then((result) => {
+//     console.log(result);
+//   })
+//   .catch((err) => {
+//     console.log(err);
+//   });
