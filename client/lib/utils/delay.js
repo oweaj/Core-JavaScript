@@ -38,7 +38,7 @@ const defaultOptions = {
   errorMessge: "에러가 발생했습니다.",
 };
 
-function delayP(options = {}) {
+export function delayP(options = {}) {
   let config = { ...defaultOptions };
 
   if (isNumber(options)) {

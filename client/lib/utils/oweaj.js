@@ -23,6 +23,7 @@ export const oweaj = async (options = {}) => {
   let response = await fetch(url, restOptions);
 
   if (response.ok) {
+    //  response 안에 있는 json 값을 가져 온다. promise라서 값 받으려고 await 사용함.
     response.data = await response.json();
   }
   return response;
