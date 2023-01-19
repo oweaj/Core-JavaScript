@@ -78,3 +78,15 @@
 - [x] Simple Calculator [바로가기](https://github.com/oweaj/Core-JavaScript/tree/03.calculator)
 - [x] Jujeob Generator [바로가기](https://github.com/oweaj/Core-JavaScript/tree/04.jujeob)
 - [x] Random Dice [바로가기](https://github.com/oweaj/Core-JavaScript/tree/05.randomDice)
+
+---
+
+### [ 비동기 통신 ]
+
+- [x] Ajax [바로가기](https://github.com/oweaj/Core-JavaScript/tree/06.ajax)
+
+---
+
+### [ Storage ]
+
+- [x] localStorage [바로가기](https://github.com/oweaj/Core-JavaScript/tree/07.storage)
